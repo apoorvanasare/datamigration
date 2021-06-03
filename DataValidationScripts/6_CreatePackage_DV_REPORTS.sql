@@ -165,8 +165,8 @@ UTL_EXCEL.END_DOCUMENT;
     END IF;
 
     -- Email the report
-PKG_UTIL_MAIL.Send_Mail(recipient, 'PDS Data Validation',
-        'Please see the attached PDS Data Validation Report from the ' || UPPER(ora_instance) || ' instance',
+PKG_UTIL_MAIL.Send_Mail(recipient, ' Data Validation',
+        'Please see the attached Data Validation Report from the ' || UPPER(ora_instance) || ' instance',
        'OGG_report.xlsx', UTL_EXCEL.GET_DOCUMENT(pcSAVE_DATA));
 
 END;
